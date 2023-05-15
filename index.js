@@ -1,10 +1,13 @@
 const fetch = require("node-fetch");
 const {GoogleSpreadsheet} = require("google-spreadsheet");
-
+const creds = require("./client_secret.json");
 let itemIds = [];
 let promises = [];
 
-
+const _collection_id = "";
+const _bearer_token =
+    "";
+const _doc_id = "";
 
 function updateItems(rows) {
     const durl = `https://api.webflow.com/collections/${_collection_id}/items`;
